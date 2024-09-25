@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Dados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Título e formulário de login -->
+    <h2 id="titulo-login">Login do Operador</h2>
+    <form id="login-form" autocomplete="off">
+        <label for="operador">Nome do Operador:</label>
+        <input type="text" id="operador" required>
+        <button type="submit">Entrar</button>
+    </form>
+
+    <!-- Seção de registro, inicialmente oculta -->
+    <div id="registro-section" style="display:none;">
+        <h2>Registro de Dados</h2>
+        <p id="operador-logado"></p>
+        <form id="registro-form">
+            <div>
+                <label for="temperatura">Temperatura:</label>
+                <select id="temperatura">
+                    <option value="">Selecione a Temperatura</option>
+                    <!-- Opções dinâmicas -->
+                </select>
+            </div>
+
+            <div>
+                <label for="pressao">Pressão:</label>
+                <select id="pressao">
+                    <option value="">Selecione a Pressão</option>
+                    <!-- Opções dinâmicas -->
+                </select>
+            </div>
+
+            <div>
+                <label for="volume">Volume de Gás:</label>
+                <input type="text" id="volume" disabled>
+            </div>
+
+            <div id="botao-container">
+                <button type="submit">Salvar</button>
+                <button id="exportar-excel">Exportar para Excel</button>
+            </div>
+        </form>
+        <div id="mensagem"></div>
+
+        <h3>Registros Salvos</h3>
+        <div class="table-container">
+            <table id="tabela-registros">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Operador</th>
+                        <th>Data</th>
+                        <th>Hora</th>
+                        <th>Temperatura</th>
+                        <th>Pressão</th>
+                        <th>Volume de Gás</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Registros dinâmicos -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

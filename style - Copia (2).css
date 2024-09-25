@@ -1,0 +1,95 @@
+/* Estilo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 30px; /* Espaço aumentado ao redor do formulário */
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+input, select, button {
+    padding: 10px; /* Aumentado para melhorar a aparência */
+    margin-bottom: 10px;
+    width: 100%; /* Ajuste para largura total disponível */
+    max-width: 300px; /* Largura máxima para elementos */
+    box-sizing: border-box; /* Inclui o padding na largura total do elemento */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo da tabela */
+.table-container {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd; /* Adiciona bordas às células da tabela */
+}
+
+th {
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#mensagem {
+    color: green;
+    font-weight: bold;
+}
+
+#mensagem-erro {
+    color: red; /* Adicionado para mensagens de erro */
+    font-weight: bold;
+}
+
+/* Estilo dos campos de registro */
+#registro-form {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+    gap: 20px; /* Espaço entre os itens */
+}
+
+#registro-form > div {
+    flex: 1 1 300px; /* Permite que os itens se ajustem conforme o espaço disponível */
+    display: flex;
+    flex-direction: column;
+}
+
+#botao-container {
+    display: flex;
+    gap: 10px; /* Espaço entre os botões */
+    margin-top: 10px; /* Espaço acima dos botões */
+}

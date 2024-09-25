@@ -1,0 +1,102 @@
+/* Estilo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    color: #035cd8ef;
+}
+
+form {
+    margin-bottom: 30px; /* Espaço aumentado ao redor do formulário */
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+input, select, button {
+    padding: 10px; /* Aumentado para melhorar a aparência */
+    margin-bottom: 10px;
+    width: 100%; /* Ajuste para largura total disponível */
+    max-width: 300px; /* Largura máxima para elementos */
+    box-sizing: border-box; /* Inclui o padding na largura total do elemento */
+}
+
+button {
+    background-color: #2f85f5;
+    color: rgba(127, 211, 244, 0.626);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3a6da1;
+}
+
+/* Estilo da tabela */
+.table-container {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #37399c;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #7db1f5ac; /* Adiciona bordas às células da tabela */
+}
+
+th {
+    background-color: #b2d4fab9;
+    border-bottom: 2px solid #b2d4fab9;
+}
+
+tr:nth-child(even) {
+    background-color: #b2d4fab9;
+}
+
+#mensagem {
+    color: green;
+    font-weight: bold;
+}
+
+#mensagem-erro {
+    color: red; /* Adicionado para mensagens de erro */
+    font-weight: bold;
+}
+
+/* Estilo dos campos de registro */
+#registro-form {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+    gap: 20px; /* Espaço entre os itens */
+}
+
+#registro-form > div {
+    flex: 1 1 300px; /* Permite que os itens se ajustem conforme o espaço disponível */
+    display: flex;
+    flex-direction: column;
+}
+
+#botao-container {
+    display: flex;
+    gap: 5px; /* Espaço entre os botões */
+    margin-top: 5px; /* Espaço acima dos botões */
+}
+
+/* Estilo do botão "Limpar Registros" */
+/*#limpar-registros {
+    display: block;
+    width: auto; /* Ajusta a largura para o tamanho do conteúdo */
+  /*  margin-top: 20px; /* Espaço acima do botão para separá-lo da tabela */
+/*}

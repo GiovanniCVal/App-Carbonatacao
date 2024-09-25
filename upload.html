@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume de Gás</title>
+</head>
+<body>
+    <script>
+        async function carregarDados() {
+            const response = await fetch('dados.csv');
+            const data = await response.text();
+
+            const linhas = data.split('\n');
+            const tabelaVolumeGas = linhas.map(linha => {
+                const [temperatura, pressao, volume] = linha.split(',');
+                return {
+                    temperatura: parseFloat(temperatura),
+                    pressao: parseFloat(pressao),
+                    volume: parseFloat(volume)
+                };
+            });
+
